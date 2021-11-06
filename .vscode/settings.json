@@ -1,0 +1,4 @@
+{
+  "appService.deploySubpath": ".",
+  "appService.defaultWebAppToDeploy": "/subscriptions/a15aaf9a-f872-41ba-b0cd-6e450f918103/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.Web/sites/API-wellness"
+}

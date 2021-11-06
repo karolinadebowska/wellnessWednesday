@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wellness Wednesday</title>
+    <!--Style sheet-->
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Patua+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="js/activity.js"></script>
+</head>
+
+<body onload="selectDefaultEventsIndex()">
+    <div id='nextEvent'
+        style="min-height:2em; background-color: black; color: white; text-align: center; padding: 0.3em;">
+        <p style="margin: 0;padding: 0 2%;"><span id='specialDay'></span></p>
+    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="./find.html">
+                    <img src="./images/logo.png" alt="" width="50" height="50">
+                </a>
+                <p id="title_nav" style="z-index: 3; margin: auto 0;">WELLNESS WEDNESDAY</p>
+            </div>
+            <div id="navbarNav">
+                <ul class="navbar-nav" style="z-index: 3 !important;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./find.html">Find Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br /><br /><br />
+    <div class='content-about'>
+        <div class="row" style="margin: 0;">
+            <div class="col-lg-6 about-image">
+                <img id='image_people' style='display: block;' src="images/team.png" alt="" />
+            </div>
+            <div class="col-sm-6" id="heading">
+                <h2 class="about-heading">
+                    Dreaming about the happy and productive work team?<br /><br />
+                    Why don't just build one?
+                </h2>
+            </div>
+        </div>
+        <div style="background-color: white; margin:0 10% 0 0">
+            <p style="padding: 3%; text-align: centre; font-size: 1.2em;">
+                But team building at work can be tricky,
+                especially nowadays when people work remotely or socially distance. <br /><br />
+                <span style='font-weight:bold;'>Wellness Wednesday</span> lets you <span class="yellow">find a suitable
+                    fun activity</span> for your team. Whether you have 10 minutes or a few hours, you will find
+                something just right for your buddies. <br />
+                <span class="yellow">No more browsing the Internet</span>, reading articles that just take your time.
+                How many times have you spent a long time searching for this one not awkward activity that would take no
+                longer than 15 minutes?
+                <br />In Wellness Wednesday you can <span class="yellow">specify time constraints, supply and the
+                    character</span> of a game.<br /> Mindfulness, Team Bonding or Creativity? You decide!
+            </p>
+        </div>
+        <div class='booster_div'>
+            <h2>Benefits of Booster Breaks*</h2>
+            <p><span style='font-weight: 600;'>* Booster Break</span> is an easy-to-implement workplace policy designed
+                to
+                support wellness within an organization, improve employee health and increase productivity.
+            </p>
+        </div>
+        <div class="row" style="margin: auto 0;justify-content: space-evenly;">
+            <div class="col-lg-4 about-image-small">
+                <div style='position: relative;'>
+                    <img class='image_benefits' src="images/human.jpg" alt="Image of an employee">
+                    <div class='image_benefits_head_div'>
+                        <h4 class='benefits_title_h'>INDIVIDUAL</h4>
+                    </div>
+                </div>
+                <ul class='list_benefit'>
+                    <li>Enhanced Job Satisfaction</li>
+                    <li>Improved Physical Health</li>
+                    <li>Improved Mental Health</li>
+                    <li>Better Communication</li>
+                    <li>Increased Confidence</li>
+                    <li>Increased Motivation</li>
+                    <li>Reduced Stress</li>
+                    <li>Energy Boost</li>
+                    <li>Friendships</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 about-image-small">
+                <div style='position: relative;'>
+                    <img class='image_benefits' src="images/office.png" alt="Image of an organization" />
+                    <div class='image_benefits_head_div'>
+                        <h4 class='benefits_title_h'>ORGANIZATION</h4>
+                    </div>
+                </div>
+                <ul class='list_benefit'>
+                    <li>Improved Organizational Morale</li>
+                    <li>Improved Organizational Image</li>
+                    <li>Improved Team Cooperation</li>
+                    <li>Built Trust for Collaboration</li>
+                    <li>Uncovered Hidden Talents </li>
+                    <li>Identified Future Leaders</li>
+                    <li>Lower Health Care Costs</li>
+                    <li>Long-term Employees</li>
+                    <li>Better Productivity</li>
+                </ul>
+            </div>
+        </div>
+        <div class='parent' id='parent_mental' style="background-color: black;position: relative;margin-top: 3rem; ">
+            <div class="child" id="heading_mental">
+                <div style="background-color: black; color:white;">
+                    <h2 class="mental-heading">MENTAL HEALTH CRISIS</h2>
+                    <h5 id='crisis_list' style="font-weight:600; padding: 3%; text-align: left; font-size: 1.2em;">
+                        The World Health Organization describes stress as the "global health epidemic of the 21st
+                        century."</br></br><br />
+                        Employee depression, stress and anxiety accounted for 83% of all emotional health
+                        cases<br /><br /></br>
+                        A quarter of all employees view their jobs as the number one stressor in their
+                        lives<br /></br><br />
+
+                    </h5>
+                </div>
+            </div>
+            <div class='child' style='width:100%;padding:0; '>
+                <img id="image_boy" src="images/mentalhealth.jpg" alt="" />
+            </div>
+        </div>
+        <div class="row" style="padding: 5% 0 5% 0; min-height: 300px; margin:0 !important">
+            <div class="col-sm-7">
+                <h4 class="pace-heading">
+                    Since the pace and intensity of work culture are not likely to change,
+                    it’s now more important than ever to take care of wellness within an organization.
+                </h4>
+            </div>
+        </div>
+        <div style="background-color: white; margin: 0 5% 10% 5%;">
+            <p style="padding: 3%; text-align: centre; font-size: 1.2em;">
+                <span style='text-align: center; display: block; font-weight: 600;'>Don't know how to start?</span></br>
+                Schedule a brief session of 15 to 30 minutes every week (how about Wednesday?) and gather everyone to
+                participate in a chosen activity from our site. Do you have time to do it everyday? Even better!
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Wellness Wednesday</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

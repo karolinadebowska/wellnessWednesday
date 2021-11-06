@@ -1,0 +1,69 @@
+/* purgecss start ignore */
+
+@font-face{
+  font-family:"Proxima Nova";
+
+  src:url(/packs/static/0ca27c283b4e70ba3c67.eot);
+
+  src:url(/packs/static/0ca27c283b4e70ba3c67.eot?#iefix) format("embedded-opentype"),url(/packs/static/b42aa9a7d19ffc2dac8f.woff2) format("woff2"),url(/packs/static/b2bc432491033b46b2b6.ttf) format("truetype"),url(/packs/static/24951841ea3f93a9bcb1.svg#ProximaNovaRegular) format("svg");
+
+  font-weight:400;
+
+  font-style:normal
+}
+
+@font-face{
+  font-family:"Proxima Nova";
+
+  src:url(/packs/static/8d5b66ce5550c215a505.eot);
+
+  src:url(/packs/static/8d5b66ce5550c215a505.eot?#iefix) format("embedded-opentype"),url(/packs/static/2a8b27bb743161f60491.woff2) format("woff2"),url(/packs/static/58d9306cc4330949358c.ttf) format("truetype"),url(/packs/static/ff12baaf760982ea7b04.svg#ProximaNovaRegularItalic) format("svg");
+
+  font-weight:normal;
+
+  font-style:italic
+}
+
+@font-face{
+  font-family:"Proxima Nova";
+
+  src:url(/packs/static/75ee15ff4e8718844552.eot);
+
+  src:url(/packs/static/75ee15ff4e8718844552.eot?#iefix) format("embedded-opentype"),url(/packs/static/6b1196f59b8d8e29d8a9.woff2) format("woff2"),url(/packs/static/80cede53af09db7c79b6.ttf) format("truetype"),url(/packs/static/f4920136221efd374568.svg#ProximaNovaBold) format("svg");
+
+  font-weight:700;
+
+  font-style:normal
+}
+
+@font-face{
+  font-family:"Soehne";
+
+  font-weight:400;
+
+  src:url(/packs/static/f30676145f7ec799a856.woff) format("woff"),url(/packs/static/ecfcc72471daefcad079.woff2) format("woff2"),url(/packs/static/e5684f3ceb2c421b484f.eot)
+}
+
+@font-face{
+  font-family:"Soehne";
+
+  font-weight:500;
+
+  src:url(/packs/static/3c15730e997c7fec65a6.woff) format("woff"),url(/packs/static/938afb01000638425ce0.woff2) format("woff2"),url(/packs/static/b08e62f9d16dfd11f6f1.eot)
+}
+
+@font-face{
+  font-family:"Soehne";
+
+  font-weight:700;
+
+  src:url(/packs/static/1a1b4a790a68bb9f1e4d.woff) format("woff"),url(/packs/static/853578f41d7001101b10.woff2) format("woff2"),url(/packs/static/d106e2132133482428e7.eot)
+}
+
+.font-brand{
+  font-family:"Soehne",sans-serif
+}
+
+/* purgecss end ignore */
+
+/*# sourceMappingURL=fonts-9bb457b0.css.map*/
