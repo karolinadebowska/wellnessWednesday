@@ -20,9 +20,9 @@
 </head>
 
 <body onload="selectDefaultEvents()">
-    <div id='nextEvent' style="min-height:2em; background-color: black; color: white; text-align: center; padding: 0.3em;">
-        <p style="margin: 0;padding: 0 2%;"><span id='specialDay'></span></p>
-    </div>    
+    <div id='nextEvent'>
+        <p class='special_day_p'><span id='specialDay'></span></p>
+    </div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -30,10 +30,10 @@
                 <a class="navbar-brand" href="./find.html">
                     <img src="./images/logo.png" alt="" width="50" height="50">
                 </a>
-                <p id="title_nav" style="z-index: 3; margin: auto 0;">WELLNESS WEDNESDAY</p>
+                <p id="title_nav">WELLNESS WEDNESDAY</p>
             </div>
             <div id="navbarNav">
-                <ul class="navbar-nav" style="z-index: 3 !important;">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="./find.html">Find Activity</a>
                     </li>
@@ -45,18 +45,18 @@
         </div>
         <div id="background"></div>
     </nav>
-<div id='content'>
-        <div class='parent' id='layout_find_parent' style="background-color: #fcd027 !important; padding-bottom: 1rem;">
-            <div class='child' id='child_image' style=' z-index: 1; flex:1;'>
+    <div id='content'>
+        <div class='parent' id='layout_find_parent'>
+            <div class='child' id='child_image'>
                 <span class="helper"></span>
                 <img class="title_image pulse" src="images/logo.png" onclick='scrollToSearch()' alt="logo">
             </div>
-            <div class='child' id='search_child' style='z-index: 1; flex:2;'>
+            <div class='child' id='search_child'>
                 <div>
-                    <h2 style='text-align: center; font-weight: bold;margin-top: 20px;'>Let's find a right activity for
+                    <h2 id='lets_find'>Let's find a right activity for
                         YOUR TEAM!</h2>
                 </div>
-                <div style="width: 90%;margin: 30px auto 0px auto;">
+                <div id='tag_holder'>
                     <button onclick="changeTag(event)" class="btn" value='all' id='all'>ALL</button>
                     <button onclick="changeTag(event)" class="btn" value='Virtual' id='Virtual'>VIRTUAL</button>
                     <button onclick="changeTag(event)" class="btn" value='In-Person' id='In-Person'>IN-PERSON</button>
@@ -85,14 +85,14 @@
                     <button onclick="changeTag(event)" class="btn" value='Leadership'
                         id='Leadership'>LEADERSHIP</button>
                 </div>
-                <div class='parent' style="justify-content: center;">
+                <div class='parent' id='parent_occasions'>
                     <button onclick="showOccasion(event)" class="btn" value='Thanksgiving' id='Thanksgiving'>
                         THANKSGIVING
                     </button>
                     <button onclick="showOccasion(event)" class="btn" value='Christmas' id='Christmas'>
-                            CHRISTMAS
+                        CHRISTMAS
                     </button>
-                    
+
                 </div>
                 <div class="parent" id='supply_time_parent'>
                     <div class="child">
@@ -114,16 +114,11 @@
                         <button onclick="changeSupply(event)" value="no-supply" id='no-supply' class="btn">NO</button>
                     </div>
                 </div>
-                <div class="input-group rounded"
-                    style="max-width: 550px;background-color: white; margin: 15px auto; min-width: 250px !important;">
+                <div class="input-group rounded">
                     <div id='name_desc'>
                         <button onmouseout='hideAltOption()' onmouseover='displayAltOption()'
-                            onclick='changeSearchType()'
-                            style="margin-left: 1rem;background-color: white; padding: 0; height: 50px;"
-                            class="input-group-text border-0">
-                            <p id='search-type'
-                                style="font-weight: bold;font-size:1.2em; text-decoration: underline; width: 7rem;background-color: transparent;padding-bottom: 0px;padding-top: 1.5rem;margin-right: 1em;height: 3rem;">
-                                Name</p>
+                            onclick='changeSearchType()' class="input-group-text border-0">
+                            <p id='search-type'>Name</p>
                         </button>
                     </div>
                     <div class='parent' id='search_input_parent'>
@@ -144,36 +139,35 @@
             <h1 id='results_heading'>Results</h1>
             <div class='parent' style="justify-content: space-between;">
                 <div style='position:relative;'>
-                  <p id='activitiesCount' style="bottom: 0.5rem; position: absolute; display: inline-block; width: auto; margin: 0 auto; white-space: nowrap;">
-                    
-                  </p>
+                    <p id='activitiesCount'>
+                    </p>
                 </div>
                 <select name='sortBy' id='sortSelect' class="btn my-2" onchange="sortElements()">
-                  <option value="none" selected disabled hidden>
-                    Sort by
-                  </option>
-                  <option value='az'>
-                    Name A-Z
-                  </option>
-                  <option value='za'>
-                    Name Z-A
-                  </option>
-                  <option value='time-asc'>
-                    Shortest time
-                  </option>
-                  <option value='time-desc'>
-                    Longest time
-                  </option>
-                </select>          
-              </div>
-        <div style="position: relative;" id='loading'>
-            <img style="position: relative; margin: 0 auto; display: block;width: 220px;" src='images/loading.gif' alt='Loading...' />
-            <div style="text-align: center;">
-                <p>Just a second...</p>
+                    <option value="none" selected disabled hidden>
+                        Sort by
+                    </option>
+                    <option value='az'>
+                        Name A-Z
+                    </option>
+                    <option value='za'>
+                        Name Z-A
+                    </option>
+                    <option value='time-asc'>
+                        Shortest time
+                    </option>
+                    <option value='time-desc'>
+                        Longest time
+                    </option>
+                </select>
             </div>
-        </div>
-        <div class="results" id="results" style="margin: 0 auto; background-color: transparent;">
-        </div>
+            <div id='loading'>
+                <img id='loading_image' src='images/loading.gif' alt='Loading...' />
+                <div style="text-align: center;">
+                    <p>Just a second...</p>
+                </div>
+            </div>
+            <div class="results" id="results">
+            </div>
         </div>
     </div>
     <footer style='z-index: 2;'>

@@ -21,21 +21,20 @@
 </head>
 
 <body onload="selectDefaultEventsIndex()">
-    <div id='nextEvent'
-        style="min-height:2em; background-color: black; color: white; text-align: center; padding: 0.3em;">
-        <p style="margin: 0;padding: 0 2%;"><span id='specialDay'></span></p>
+    <div id='nextEvent'>
+        <p class='special_day_p'><span id='specialDay'></span></p>
     </div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <div>
                 <a class="navbar-brand" href="./find.html">
-                    <img src="./images/logo.png" alt="" width="50" height="50">
+                    <img src="./images/logo.png" alt="logo" width="50" height="50">
                 </a>
-                <p id="title_nav" style="z-index: 3; margin: auto 0;">WELLNESS WEDNESDAY</p>
+                <p id="title_nav">WELLNESS WEDNESDAY</p>
             </div>
             <div id="navbarNav">
-                <ul class="navbar-nav" style="z-index: 3 !important;">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="./find.html">Find Activity</a>
                     </li>
@@ -50,7 +49,7 @@
     <div class='content-about'>
         <div class="row" style="margin: 0;">
             <div class="col-lg-6 about-image">
-                <img id='image_people' style='display: block;' src="images/team.png" alt="" />
+                <img id='image_people' src="images/team.png" alt="Team vector created by stories - www.freepik.com" />
             </div>
             <div class="col-sm-6" id="heading">
                 <h2 class="about-heading">
@@ -79,10 +78,11 @@
                 to support wellness within an organization, improve employee health and increase productivity.
             </p>
         </div>
-        <div class="row" style="margin: auto 0;justify-content: space-evenly;">
+        <div class="row" style="margin: auto 0; justify-content: space-evenly;">
             <div class="col-lg-4 about-image-small">
                 <div style='position: relative;'>
-                    <img class='image_benefits' src="images/human.jpg" alt="Image of an employee">
+                    <img class='image_benefits' src="images/human.jpg"
+                        alt="People vector created by stories - www.freepik.com<">
                     <div class='image_benefits_head_div'>
                         <h4 class='benefits_title_h'>INDIVIDUAL</h4>
                     </div>
@@ -101,7 +101,8 @@
             </div>
             <div class="col-lg-4 about-image-small">
                 <div style='position: relative;'>
-                    <img class='image_benefits' src="images/office.png" alt="Image of an organization" />
+                    <img class='image_benefits' src="images/office.png"
+                        alt="Recolored City vector created by stories - www.freepik.com" />
                     <div class='image_benefits_head_div'>
                         <h4 class='benefits_title_h'>ORGANIZATION</h4>
                     </div>
@@ -119,11 +120,11 @@
                 </ul>
             </div>
         </div>
-        <div class='parent' id='parent_mental' style="background-color: black;position: relative;margin-top: 3rem; ">
+        <div class='parent' id='parent_mental'>
             <div class="child" id="heading_mental">
                 <div style="background-color: black; color:white;">
                     <h2 class="mental-heading">MENTAL HEALTH CRISIS</h2>
-                    <h5 id='crisis_list' style="font-weight:600; padding: 3%; text-align: left; font-size: 1.2em;">
+                    <h5 id='crisis_list'>
                         The World Health Organization describes stress as the "global health epidemic of the 21st
                         century."</br></br><br />
                         Employee depression, stress and anxiety accounted for 83% of all emotional health
